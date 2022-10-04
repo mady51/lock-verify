@@ -23,4 +23,8 @@
     "index.js",
     "cli.js"
   ]
+},
+"dependencies": {
+  "shelljs": "0.8.1",
+  "jquery": "1.0.0",
 }
