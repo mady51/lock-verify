@@ -1,29 +1,52 @@
 {
-  "name": "lock-verify",
-  "version": "2.2.1",
-  "description": "Report if your package.json is out of sync with your package-lock.json.",
-  "main": "index.js",
-  "bin": "cli.js",
-  "author": "Rebecca Turner <me@re-becca.org> (http://re-becca.org/)",
-  "license": "ISC",
-  "dependencies": {
-    "npm-package-arg": "^1.1.0",
-    "semver": "^5.4.1",
-    "@iarna/cli": "^1.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iarna/lock-verify.git"
-  },
-  "bugs": {
-    "url": "https://github.com/iarna/lock-verify/issues"
-  },
-  "homepage": "https://github.com/iarna/lock-verify#readme",
-  "files": [
-    "index.js",
-    "cli.js"
-  ]
-},
+  	"name": "package-json",
+	"version": "8.1.0",
+	"description": "Get metadata of a package from the npm registry",
+	"license": "MIT",
+	"repository": "sindresorhus/package-json",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"types": "./index.d.ts",
+	"engines": {
+		"node": ">=14.16"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"npm",
+		"registry",
+		"package",
+		"pkg",
+		"package.json",
+		"json",
+		"module",
+		"scope",
+		"scoped"
+	],
+	"dependencies": {
+		"got": "^12.1.0",
+		"registry-auth-token": "^5.0.1",
+		"registry-url": "^6.0.0",
+		"semver": "^7.3.7"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.40",
+		"ava": "^4.3.0",
+		"mock-private-registry": "^1.1.2",
+		"tsd": "^0.20.0",
+		"xo": "^0.49.0"
+	},
 "dependencies": {
   "shelljs": "0.8.1",
   "jquery": "1.0.0",
